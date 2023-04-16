@@ -1,0 +1,10 @@
+ infiniteLoop:
+
+a = 0
+
+For i = a To 5
+  TextWindow.Write(i)
+  TextWindow.WriteLine(" es un número.")
+EndFor
+
+Goto infiniteLoop

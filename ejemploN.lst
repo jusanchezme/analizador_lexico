@@ -1,0 +1,37 @@
+' Cadenas no propias del lenguaje válidas a nivel léxico.
+
+   ' Enteros con signo
+      +1234, -31
+
+   ' Enteros sin signo
+      007, 8546105789123870
+
+
+   ' Flotantes con signo
+      +37.00003, -258.1
+
+   ' Flotantes sin signo
+      3.141952, 000008.800000
+
+   ' Secuencias de escape (Aunque no funcionen al imprimirlas se deben considerar)
+      "\n", "\t"
+
+   ' Cadena vacía y con espacios en blanco
+      "", " ", "          "
+
+   ' Strings con caracteres especiales
+      "niño", "pingüino", "français", "à", "$_!&|¬"
+
+   ' Otras cadenas válidas
+      "tkn_str", "H o   L         a", "id",
+      "Conteste con 'si' o 'no', por favor",
+      ">=<>!=====<", "Main", "8546105789123870",
+      "+37.00003", ";", "error", "_", "."
+
+   ' ¿Y sí coloco muchas comas como texto?
+      ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"
+
+   ' El léxico debe recogerlas, pero en el sintáctico
+   ' deberás ver como hace para identificar las
+   ' partes del token correctamente.
+
